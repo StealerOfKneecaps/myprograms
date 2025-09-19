@@ -3,28 +3,26 @@ win = False
 currentPos = 0
 while (win==False):
     diceRoll = int(input("Yo what's your diceroll (honour system guys)\n"))
-    if diceRoll>12:
+    if diceRoll>12 or diceroll<2:
         print("NIce try bozo")
     else:
         if currentPos+diceRoll<=100:
             currentPos+=diceRoll
-        else:
+        gameDict = {
+            3:34,
+            54:19,
+            40:64,
+            90:48,
+            67:86,
+            99:77
+        }
+        if currentPosition in gameDict:
+            currentPosition = gameDict[currentPosition]
+        elif currentPos+diceRoll>100:
             print("reroll, highr than 100")
-        if currentPos == 9:
-            currentPos = 34
-        elif currentPos == 54:
-            currentPos = 19
-        elif currentPos == 40:
-            currentPos = 64 
-        elif currentPos == 90:
-            currentPos = 48
-        elif currentPos == 67:
-            currentPos = 86
-        elif currentPos == 99:
-            currentPos = 77 
-        elif currentPos == 100: #seeing the elifs makes my eyes cry
+        elif currentPos == 100: 
             win=True
             print("YOU WON YOU GIGACHAD SIGMA TOUHOU PROJECT!!!!!!")
         print(f"current position is {currentPos}")
 
-    
+#use a switchcase p
