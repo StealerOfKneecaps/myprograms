@@ -26,3 +26,16 @@ def selection_sorter(unsortedList):
             i+=1
     return unsortedList
 print(selection_sorter([5, 6, 2, 7, 9, 1, 3, 0, 4, 8]))
+
+
+def selection_destructive(unsortedList):
+    sortedList = []
+    while len(unsortedList)>0:
+        lowest = unsortedList[0]
+        for i in unsortedList:
+            if i<lowest:
+                lowest = i
+        sortedList.append(lowest)
+        unsortedList.remove(lowest)
+    return sortedList
+print(selection_destructive([5, 2, 3, 4, 9, 9, 0, 1]))
