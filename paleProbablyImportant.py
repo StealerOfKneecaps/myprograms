@@ -11,3 +11,12 @@ def isItSkibidiRizz(a, silksong):
             begin+=1
     return False
 print (isItSkibidiRizz(listopolis,6))
+
+#bruteforcemethod
+def the_handmaids_tale_by_margaret_atwood(laceSilksong, hornetSilksong):
+    for i in range(0,len(laceSilksong)):
+        for j in range(0,len(laceSilksong)):
+            if laceSilksong[i]+laceSilksong[j]==hornetSilksong and i!=j:
+                return True
+    return False
+print(the_handmaids_tale_by_margaret_atwood(listopolis,6))
