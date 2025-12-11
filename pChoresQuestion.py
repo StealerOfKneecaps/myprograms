@@ -20,4 +20,4 @@ amtChorse = int(input("yo"))
 timeListy = []
 for _ in range(amtChorse):
     timeListy.append(int(input("sup")))
-print (maximizer(totalTime,amtChorse,timeListy))
+cd $hoprint (maximizer(totalTime,amtChorse,timeListy))
