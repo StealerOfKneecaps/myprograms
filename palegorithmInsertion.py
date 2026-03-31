@@ -13,17 +13,12 @@ def quality_deutsche_efficiency(owo):
             j-=1
         i+=1
     return owo
-
-def sort_it(listyA, listyB):
-    #where A and B are connected. 
-    swap = True
-    while swap:
-        swap = False
-        for i in range (1, len(listyA)):
-            if listyA[i-1]>listyA[i]:
-                listyA[i-1], listyA[i] = listyA[i], listyA[i-1]
-                listyB[i-1], listyB[i] = listyB[i], listyB[i-1]
-                swap = True
-    return listyA,listyB
-
-print(sort_it([3, 5, 2, 4, 1, 6],[9, 25, 4, 16, 1, 36]))
+def quality_skibidi_refirerirenre(uwu):
+    for i in range(0, len(uwu)):
+         for j in range (i, 0, -1):
+            if uwu[j-1]>uwu[j]:
+                uwu[j-1],uwu[j]=uwu[j],uwu[j-1]
+            else:
+                break
+    return uwu
+print(quality_skibidi_refirerirenre([5, 3, 2, 2, 7, 8, 1, 9, 0]))
